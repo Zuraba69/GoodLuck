@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         actionBar?.hide()
         setContentView(R.layout.activity_main)
         auth = FirebaseAuth.getInstance()
-        RegisterButton.setOnClickListener {
+        dontHaveAnAccountBtn.setOnClickListener {
             startActivity(Intent(this,RegisterActivity::class.java))
         }
 
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 auth.signInWithEmailAndPassword(email,password)
                     .addOnCompleteListener(this){task ->
                         if(task.isSuccessful){
-                            val intent = Intent(this,GameActivity::class.java)
+                            val intent = Intent(this,Profile::class.java)
                             startActivity(intent)
                         } else {Toast.makeText(this,"Login Failed",Toast.LENGTH_LONG).show()}
                     }
