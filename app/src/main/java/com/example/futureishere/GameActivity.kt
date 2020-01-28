@@ -7,6 +7,8 @@ import kotlinx.android.synthetic.main.activity_game.*
 
 class GameActivity : AppCompatActivity() {
 
+    var res: Int = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
@@ -16,7 +18,11 @@ class GameActivity : AppCompatActivity() {
         // status bar is hidden, so hide that too if necessary.
         actionBar?.hide()
         setContentView(R.layout.activity_game)
-        Answear11.setOnClickListener {
+        Answear12.setOnClickListener {
+            if(Answear12.isPressed){
+                res ++
+                ScoreInGame.text = "" + res
+            }
 
         }
     }

@@ -82,4 +82,17 @@
             android:textSize="20dp"
             android:text="Manana Kopadze" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/ScoreInGame"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="#F3EFEF"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="70dp" />
 </FrameLayout>
