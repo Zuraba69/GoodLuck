@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFEB37"
-    tools:context=".GameActivity">
+    tools:context=".GameActivityScience">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:layout_margin="5dp"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
-            android:background="@drawable/rounded_button"
+            android:background="@drawable/rounded_question"
             android:gravity="center"
             android:text="Who Invented The Lamp ?"
             android:textColor="#F3EFEF"
