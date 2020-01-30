@@ -18,8 +18,8 @@ class Profile : AppCompatActivity() {
         actionBar?.hide()
         setContentView(R.layout.activity_profile)
 
-        ScienceButton.setOnClickListener {
-            startActivity(Intent(this,GameActivityScience::class.java))
+        MusicButton.setOnClickListener {
+            startActivity(Intent(this,GameActivityMusic::class.java))
         }
     }
 }

@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB37"
-    tools:context=".GameActivityScience">
+    android:background="@drawable/background_color"
+    tools:context=".GameActivityMusic">
 
     <LinearLayout
+        android:id="@+id/question_music_1"
         android:layout_width="match_parent"
         android:layout_height="184dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:visibility="visible">
 
         <TextView
             android:layout_width="match_parent"
@@ -20,7 +22,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_question"
             android:gravity="center"
-            android:text="Who Invented The Lamp ?"
+            android:text="Who wrote the first trash metal?"
             android:textColor="#F3EFEF"
             android:textSize="20dp">
 
@@ -28,14 +30,16 @@
 
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/amswear_music_button_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_margin="10dp">
+        android:layout_margin="10dp"
+        android:visibility="visible">
 
         <Button
-            android:id="@+id/Answear11"
+            android:id="@+id/music_answear_11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
@@ -44,10 +48,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Nikola Tesla" />
+            android:text="Metallica" />
 
         <Button
-            android:id="@+id/Answear12"
+            android:id="@+id/music_answear_12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#F3EFEF"
@@ -56,10 +60,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Thomas Edison" />
+            android:text="Queen" />
 
         <Button
-            android:id="@+id/Answear13"
+            android:id="@+id/music_answear_13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -68,10 +72,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Zurab Kobakhidze" />
+            android:text="Iron Maiden" />
 
         <Button
-            android:id="@+id/Answear14"
+            android:id="@+id/music_answear_14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -80,7 +84,87 @@
             android:layout_margin="5dp"
             android:textAllCaps="false"
             android:textSize="20dp"
-            android:text="Manana Kopadze" />
+            android:text="Slayer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/question_music_2"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_question"
+            android:gravity="center"
+            android:text="Who is the author of the little piece of heaven?"
+            android:textColor="#F3EFEF"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/amswear_music_button_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/music_answear_21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:layout_weight="1"
+            android:textColor="#F3EFEF"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:text="Twenty One Pilots" />
+
+        <Button
+            android:id="@+id/music_answear_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#F3EFEF"
+            android:background="@drawable/rounded_button"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:text="Led Zeppelin" />
+
+        <Button
+            android:id="@+id/music_answear_23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:textColor="#F3EFEF"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:text="Opeth" />
+
+        <Button
+            android:id="@+id/music_answear_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:textColor="#F3EFEF"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:text="Avenged Sevenfold" />
     </LinearLayout>
 
     <TextView

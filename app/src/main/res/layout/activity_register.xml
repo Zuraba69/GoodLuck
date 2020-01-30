@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB37"
+    android:background="@drawable/background_color"
     tools:context=".RegisterActivity">
 
     <LinearLayout
@@ -18,6 +18,8 @@
             android:id="@+id/RegisterEmail"
             android:background="@drawable/rounded_button"
             android:textColorHint="#F3EFEF"
+            android:textColor="#F3EFEF"
+            android:gravity="start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -32,6 +34,8 @@
             android:id="@+id/RegisterPassword"
             android:background="@drawable/rounded_button"
             android:textColorHint="#F3EFEF"
+            android:textColor="#F3EFEF"
+            android:gravity="start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
