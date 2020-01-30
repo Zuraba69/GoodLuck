@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_color"
-    tools:context=".GameActivityMusic">
-
+    tools:context=".GameActivitySport">
 
 
 
@@ -14,7 +13,7 @@
 
 
     <LinearLayout
-        android:id="@+id/question_music_1"
+        android:id="@+id/question_sport_1"
         android:layout_width="match_parent"
         android:layout_height="184dp"
         android:gravity="center"
@@ -28,7 +27,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_question"
             android:gravity="center"
-            android:text="Who wrote the first thrash metal?"
+            android:text="which football club won the most champions league cup ?"
             android:textColor="#F3EFEF"
             android:textSize="20dp">
 
@@ -36,7 +35,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/answer_music_button_1"
+        android:id="@+id/answer_sport_button_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -45,7 +44,7 @@
         android:visibility="visible">
 
         <Button
-            android:id="@+id/music_answer_11"
+            android:id="@+id/sport_answer_11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
@@ -54,10 +53,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Metallica" />
+            android:text="Bayern Munich" />
 
         <Button
-            android:id="@+id/music_answer_12"
+            android:id="@+id/sport_answer_12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#F3EFEF"
@@ -66,10 +65,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Queen" />
+            android:text="Barcelona" />
 
         <Button
-            android:id="@+id/music_answer_13"
+            android:id="@+id/sport_answer_13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -78,10 +77,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Iron Maiden" />
+            android:text="Real madrid" />
 
         <Button
-            android:id="@+id/music_answer_14"
+            android:id="@+id/sport_answer_14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -90,7 +89,7 @@
             android:layout_margin="5dp"
             android:textAllCaps="false"
             android:textSize="20dp"
-            android:text="Slayer" />
+            android:text="AC Milan" />
     </LinearLayout>
 
 
@@ -102,7 +101,7 @@
 
 
     <LinearLayout
-        android:id="@+id/question_music_2"
+        android:id="@+id/question_sport_2"
         android:layout_width="match_parent"
         android:layout_height="184dp"
         android:gravity="center"
@@ -116,7 +115,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_question"
             android:gravity="center"
-            android:text="Who is the author of the little piece of heaven?"
+            android:text="Which country won the most medals in the 2012 olympics?"
             android:textColor="#F3EFEF"
             android:textSize="20dp">
 
@@ -124,7 +123,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/answer_music_button_2"
+        android:id="@+id/answer_sport_button_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -133,7 +132,7 @@
         android:visibility="invisible">
 
         <Button
-            android:id="@+id/music_answer_21"
+            android:id="@+id/sport_answer_21"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
@@ -142,10 +141,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Twenty One Pilots" />
+            android:text="Great Britain" />
 
         <Button
-            android:id="@+id/music_answer_22"
+            android:id="@+id/sport_answer_22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#F3EFEF"
@@ -154,10 +153,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Led Zeppelin" />
+            android:text="USA" />
 
         <Button
-            android:id="@+id/music_answer_23"
+            android:id="@+id/sport_answer_23"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -166,10 +165,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Opeth" />
+            android:text="China" />
 
         <Button
-            android:id="@+id/music_answer_24"
+            android:id="@+id/sport_answer_24"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -178,7 +177,7 @@
             android:layout_margin="5dp"
             android:textAllCaps="false"
             android:textSize="20dp"
-            android:text="Avenged Sevenfold" />
+            android:text="Russia" />
     </LinearLayout>
 
 
@@ -190,7 +189,7 @@
 
 
     <LinearLayout
-        android:id="@+id/question_music_3"
+        android:id="@+id/question_sport_3"
         android:layout_width="match_parent"
         android:layout_height="184dp"
         android:gravity="center"
@@ -204,7 +203,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_question"
             android:gravity="center"
-            android:text="when was The Beatles formed?"
+            android:text="Who has the most rings in the nba?"
             android:textColor="#F3EFEF"
             android:textSize="20dp">
 
@@ -212,7 +211,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/answer_music_button_3"
+        android:id="@+id/answer_sport_button_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -221,7 +220,7 @@
         android:visibility="invisible">
 
         <Button
-            android:id="@+id/music_answer_31"
+            android:id="@+id/sport_answer_31"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
@@ -230,10 +229,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="1959" />
+            android:text="Michael Jordan" />
 
         <Button
-            android:id="@+id/music_answer_32"
+            android:id="@+id/sport_answer_32"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#F3EFEF"
@@ -242,10 +241,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="1960" />
+            android:text="Earvin 'Magic' Johnson" />
 
         <Button
-            android:id="@+id/music_answer_33"
+            android:id="@+id/sport_answer_33"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -254,10 +253,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="1961" />
+            android:text="Kobe Bryant" />
 
         <Button
-            android:id="@+id/music_answer_34"
+            android:id="@+id/sport_answer_34"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -266,7 +265,7 @@
             android:layout_margin="5dp"
             android:textAllCaps="false"
             android:textSize="20dp"
-            android:text="1962" />
+            android:text="Bill Russell" />
     </LinearLayout>
 
 
@@ -278,7 +277,7 @@
 
 
     <LinearLayout
-        android:id="@+id/question_music_4"
+        android:id="@+id/question_sport_4"
         android:layout_width="match_parent"
         android:layout_height="184dp"
         android:gravity="center"
@@ -292,7 +291,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_question"
             android:gravity="center"
-            android:text="Which music group holds the record for the best-selling album in United Kingdom history?"
+            android:text="Who won the 2019 Wimbledon tournament?"
             android:textColor="#F3EFEF"
             android:textSize="20dp">
 
@@ -300,7 +299,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/answer_music_button_4"
+        android:id="@+id/answer_sport_button_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -309,7 +308,7 @@
         android:visibility="invisible">
 
         <Button
-            android:id="@+id/music_answer_41"
+            android:id="@+id/sport_answer_41"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
@@ -318,10 +317,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Queen" />
+            android:text="Roger Federer" />
 
         <Button
-            android:id="@+id/music_answer_42"
+            android:id="@+id/sport_answer_42"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#F3EFEF"
@@ -330,10 +329,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Led Zeppelin" />
+            android:text="Novak Djokovic" />
 
         <Button
-            android:id="@+id/music_answer_43"
+            android:id="@+id/sport_answer_43"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -342,10 +341,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="The Beatles" />
+            android:text="Andy Murray" />
 
         <Button
-            android:id="@+id/music_answer_44"
+            android:id="@+id/sport_answer_44"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -354,7 +353,7 @@
             android:layout_margin="5dp"
             android:textAllCaps="false"
             android:textSize="20dp"
-            android:text="The Who" />
+            android:text="Rafael Nadal " />
     </LinearLayout>
 
 
@@ -366,7 +365,7 @@
 
 
     <LinearLayout
-        android:id="@+id/question_music_5"
+        android:id="@+id/question_sport_5"
         android:layout_width="match_parent"
         android:layout_height="184dp"
         android:gravity="center"
@@ -380,7 +379,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_question"
             android:gravity="center"
-            android:text="Who holds the world record for the biggest concert of all time?"
+            android:text="Who won the 2012 FIFA Ballon d'Or?"
             android:textColor="#F3EFEF"
             android:textSize="20dp">
 
@@ -388,7 +387,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/answer_music_button_5"
+        android:id="@+id/answer_sport_button_5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -397,7 +396,7 @@
         android:visibility="invisible">
 
         <Button
-            android:id="@+id/music_answer_51"
+            android:id="@+id/sport_answer_51"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
@@ -406,10 +405,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="The Rolling Stones" />
+            android:text="Lionel Messi" />
 
         <Button
-            android:id="@+id/music_answer_52"
+            android:id="@+id/sport_answer_52"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#F3EFEF"
@@ -418,10 +417,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="AC/DC" />
+            android:text="Didier Drogba" />
 
         <Button
-            android:id="@+id/music_answer_53"
+            android:id="@+id/sport_answer_53"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -430,10 +429,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Metallica" />
+            android:text="Cristiano Ronaldo" />
 
         <Button
-            android:id="@+id/music_answer_54"
+            android:id="@+id/sport_answer_54"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -442,7 +441,7 @@
             android:layout_margin="5dp"
             android:textAllCaps="false"
             android:textSize="20dp"
-            android:text="Rob Stewart" />
+            android:text="Andres Iniesta" />
     </LinearLayout>
 
 
@@ -488,7 +487,7 @@
         android:visibility="visible"/>
 
     <Button
-        android:id="@+id/BackToCategoryFromMusic"
+        android:id="@+id/BackToCategoryFromSport"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|bottom"
@@ -501,4 +500,5 @@
         android:textColor="#F3EFEF"
         android:textSize="20dp"
         android:visibility="invisible"/>
+
 </FrameLayout>

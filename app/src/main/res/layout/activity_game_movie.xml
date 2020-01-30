@@ -5,16 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_color"
-    tools:context=".GameActivityMusic">
-
-
+    tools:context=".GameActivityMovie">
 
 
 
 
 
     <LinearLayout
-        android:id="@+id/question_music_1"
+        android:id="@+id/question_movie_1"
         android:layout_width="match_parent"
         android:layout_height="184dp"
         android:gravity="center"
@@ -28,7 +26,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_question"
             android:gravity="center"
-            android:text="Who wrote the first thrash metal?"
+            android:text="In which year were the Academy Awards, or 'Oscars', first presented?"
             android:textColor="#F3EFEF"
             android:textSize="20dp">
 
@@ -36,7 +34,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/answer_music_button_1"
+        android:id="@+id/answer_movie_button_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -45,7 +43,7 @@
         android:visibility="visible">
 
         <Button
-            android:id="@+id/music_answer_11"
+            android:id="@+id/movie_answer_11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
@@ -54,10 +52,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Metallica" />
+            android:text="1927" />
 
         <Button
-            android:id="@+id/music_answer_12"
+            android:id="@+id/movie_answer_12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#F3EFEF"
@@ -66,10 +64,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Queen" />
+            android:text="1928" />
 
         <Button
-            android:id="@+id/music_answer_13"
+            android:id="@+id/movie_answer_13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -78,10 +76,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Iron Maiden" />
+            android:text="1929" />
 
         <Button
-            android:id="@+id/music_answer_14"
+            android:id="@+id/movie_answer_14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -90,7 +88,7 @@
             android:layout_margin="5dp"
             android:textAllCaps="false"
             android:textSize="20dp"
-            android:text="Slayer" />
+            android:text="1930" />
     </LinearLayout>
 
 
@@ -102,7 +100,7 @@
 
 
     <LinearLayout
-        android:id="@+id/question_music_2"
+        android:id="@+id/question_movie_2"
         android:layout_width="match_parent"
         android:layout_height="184dp"
         android:gravity="center"
@@ -116,7 +114,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_question"
             android:gravity="center"
-            android:text="Who is the author of the little piece of heaven?"
+            android:text="What is the name of the hobbit played by Elijah Wood in the Lord of the Rings movies?"
             android:textColor="#F3EFEF"
             android:textSize="20dp">
 
@@ -124,7 +122,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/answer_music_button_2"
+        android:id="@+id/answer_movie_button_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -133,7 +131,7 @@
         android:visibility="invisible">
 
         <Button
-            android:id="@+id/music_answer_21"
+            android:id="@+id/movie_answer_21"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
@@ -142,10 +140,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Twenty One Pilots" />
+            android:text="Frodo" />
 
         <Button
-            android:id="@+id/music_answer_22"
+            android:id="@+id/movie_answer_22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#F3EFEF"
@@ -154,10 +152,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Led Zeppelin" />
+            android:text="Bilbo" />
 
         <Button
-            android:id="@+id/music_answer_23"
+            android:id="@+id/movie_answer_23"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -166,10 +164,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Opeth" />
+            android:text="Pippin" />
 
         <Button
-            android:id="@+id/music_answer_24"
+            android:id="@+id/movie_answer_24"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -178,7 +176,7 @@
             android:layout_margin="5dp"
             android:textAllCaps="false"
             android:textSize="20dp"
-            android:text="Avenged Sevenfold" />
+            android:text="Sam" />
     </LinearLayout>
 
 
@@ -190,7 +188,7 @@
 
 
     <LinearLayout
-        android:id="@+id/question_music_3"
+        android:id="@+id/question_movie_3"
         android:layout_width="match_parent"
         android:layout_height="184dp"
         android:gravity="center"
@@ -204,7 +202,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_question"
             android:gravity="center"
-            android:text="when was The Beatles formed?"
+            android:text="Who played Jack Dawson in the 1997 Titanic?"
             android:textColor="#F3EFEF"
             android:textSize="20dp">
 
@@ -212,7 +210,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/answer_music_button_3"
+        android:id="@+id/answer_movie_button_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -221,7 +219,7 @@
         android:visibility="invisible">
 
         <Button
-            android:id="@+id/music_answer_31"
+            android:id="@+id/movie_answer_31"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
@@ -230,10 +228,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="1959" />
+            android:text="Brad Pitt" />
 
         <Button
-            android:id="@+id/music_answer_32"
+            android:id="@+id/movie_answer_32"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#F3EFEF"
@@ -242,10 +240,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="1960" />
+            android:text="Leonardo DiCaprio" />
 
         <Button
-            android:id="@+id/music_answer_33"
+            android:id="@+id/movie_answer_33"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -254,10 +252,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="1961" />
+            android:text="Keanu Reeves" />
 
         <Button
-            android:id="@+id/music_answer_34"
+            android:id="@+id/movie_answer_34"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -266,7 +264,7 @@
             android:layout_margin="5dp"
             android:textAllCaps="false"
             android:textSize="20dp"
-            android:text="1962" />
+            android:text="Matt Damon" />
     </LinearLayout>
 
 
@@ -278,7 +276,7 @@
 
 
     <LinearLayout
-        android:id="@+id/question_music_4"
+        android:id="@+id/question_movie_4"
         android:layout_width="match_parent"
         android:layout_height="184dp"
         android:gravity="center"
@@ -292,7 +290,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_question"
             android:gravity="center"
-            android:text="Which music group holds the record for the best-selling album in United Kingdom history?"
+            android:text="Who directed the epic historical drama Schindler’s List in 1993 ?"
             android:textColor="#F3EFEF"
             android:textSize="20dp">
 
@@ -300,7 +298,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/answer_music_button_4"
+        android:id="@+id/answer_movie_button_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -309,7 +307,7 @@
         android:visibility="invisible">
 
         <Button
-            android:id="@+id/music_answer_41"
+            android:id="@+id/movie_answer_41"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
@@ -318,10 +316,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Queen" />
+            android:text="Quentin Tarantino" />
 
         <Button
-            android:id="@+id/music_answer_42"
+            android:id="@+id/movie_answer_42"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#F3EFEF"
@@ -330,10 +328,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Led Zeppelin" />
+            android:text="Stanley Kubrick" />
 
         <Button
-            android:id="@+id/music_answer_43"
+            android:id="@+id/movie_answer_43"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -342,10 +340,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="The Beatles" />
+            android:text="Martin Scorsese" />
 
         <Button
-            android:id="@+id/music_answer_44"
+            android:id="@+id/movie_answer_44"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -354,7 +352,7 @@
             android:layout_margin="5dp"
             android:textAllCaps="false"
             android:textSize="20dp"
-            android:text="The Who" />
+            android:text="Steven Spielberg" />
     </LinearLayout>
 
 
@@ -366,7 +364,7 @@
 
 
     <LinearLayout
-        android:id="@+id/question_music_5"
+        android:id="@+id/question_movie_5"
         android:layout_width="match_parent"
         android:layout_height="184dp"
         android:gravity="center"
@@ -380,7 +378,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_question"
             android:gravity="center"
-            android:text="Who holds the world record for the biggest concert of all time?"
+            android:text="How many movies are in Harry Potter series?"
             android:textColor="#F3EFEF"
             android:textSize="20dp">
 
@@ -388,7 +386,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/answer_music_button_5"
+        android:id="@+id/answer_movie_button_5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -397,7 +395,7 @@
         android:visibility="invisible">
 
         <Button
-            android:id="@+id/music_answer_51"
+            android:id="@+id/movie_answer_51"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button"
@@ -406,10 +404,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="The Rolling Stones" />
+            android:text="6" />
 
         <Button
-            android:id="@+id/music_answer_52"
+            android:id="@+id/movie_answer_52"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#F3EFEF"
@@ -418,10 +416,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="AC/DC" />
+            android:text="7" />
 
         <Button
-            android:id="@+id/music_answer_53"
+            android:id="@+id/movie_answer_53"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -430,10 +428,10 @@
             android:textAllCaps="false"
             android:layout_margin="5dp"
             android:textSize="20dp"
-            android:text="Metallica" />
+            android:text="8" />
 
         <Button
-            android:id="@+id/music_answer_54"
+            android:id="@+id/movie_answer_54"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -442,7 +440,7 @@
             android:layout_margin="5dp"
             android:textAllCaps="false"
             android:textSize="20dp"
-            android:text="Rob Stewart" />
+            android:text="9" />
     </LinearLayout>
 
 
@@ -488,7 +486,7 @@
         android:visibility="visible"/>
 
     <Button
-        android:id="@+id/BackToCategoryFromMusic"
+        android:id="@+id/BackToCategoryFromMovie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|bottom"
@@ -501,4 +499,5 @@
         android:textColor="#F3EFEF"
         android:textSize="20dp"
         android:visibility="invisible"/>
+
 </FrameLayout>

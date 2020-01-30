@@ -21,5 +21,11 @@ class Profile : AppCompatActivity() {
         MusicButton.setOnClickListener {
             startActivity(Intent(this,GameActivityMusic::class.java))
         }
+        SportButton.setOnClickListener {
+            startActivity(Intent(this,GameActivitySport::class.java))
+        }
+        MovieButton.setOnClickListener {
+            startActivity(Intent(this,GameActivityMovie::class.java))
+        }
     }
 }
