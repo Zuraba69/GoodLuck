@@ -27,5 +27,8 @@ class Profile : AppCompatActivity() {
         MovieButton.setOnClickListener {
             startActivity(Intent(this,GameActivityMovie::class.java))
         }
+        log_out_btn.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
+        }
     }
 }
