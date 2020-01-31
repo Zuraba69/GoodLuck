@@ -5,7 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_color"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        android:layout_gravity="center|top" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -43,6 +52,17 @@
             android:padding="10dp"
             android:hint="Enter Your Password"
             android:inputType="textPassword" />
+        <TextView
+            android:id="@+id/dontHaveAnAccountBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="5dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="20dp"
+            android:textColor="#F3EFEF"
+            android:text="Don't have an account?"/>
 
     </LinearLayout>
 
@@ -58,25 +78,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/rounded_button"
             android:text="Log In"
             android:textAllCaps="false"
             android:textColor="#F3EFEF"
             android:textSize="20dp" />
 
-        <Button
-            android:id="@+id/dontHaveAnAccountBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginEnd="60dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/rounded_button"
-            android:text="Don't have an account?"
-            android:textAllCaps="false"
-            android:textColor="#F3EFEF"
-            android:textSize="20dp" />
 
     </LinearLayout>
 </FrameLayout>
