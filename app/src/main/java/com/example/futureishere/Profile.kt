@@ -30,5 +30,8 @@ class Profile : AppCompatActivity() {
         log_out_btn.setOnClickListener {
             startActivity(Intent(this,LoginActivity::class.java))
         }
+        change_password_button.setOnClickListener {
+            startActivity(Intent(this,ChangePassword::class.java))
+        }
     }
 }

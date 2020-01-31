@@ -38,7 +38,7 @@ class RegisterActivity : AppCompatActivity() {
                 auth.createUserWithEmailAndPassword(email,password)
                     .addOnCompleteListener(this){task ->
                         if(task.isSuccessful){
-                            startActivity(Intent(this,GameActivityMusic::class.java))
+                            startActivity(Intent(this,Profile::class.java))
                         } else {Toast.makeText(this,"registration failed",Toast.LENGTH_LONG).show()}
                     }
             }
