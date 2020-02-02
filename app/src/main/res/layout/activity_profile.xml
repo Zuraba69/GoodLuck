@@ -72,18 +72,32 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="horizontal">
-        <Button
-            android:id="@+id/TriviaButton"
+        <LinearLayout
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:text="Trivia" />
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_category_buttons">
 
-        <Button
-            android:id="@+id/TicTacToeButton"
+            <Button
+                android:id="@+id/TriviaButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="7dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/trivia_button_logo" />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:text="Tic-Tac-Toe"
-            android:textAllCaps="false"/>
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_category_buttons">
+            <Button
+                android:id="@+id/TicTacToeButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/tic_tac_toe_button_logo" />
+        </LinearLayout>
     </LinearLayout>
 
 </FrameLayout>

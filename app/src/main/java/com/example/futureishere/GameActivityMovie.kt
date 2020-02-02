@@ -282,7 +282,7 @@ class GameActivityMovie : AppCompatActivity() {
             }
         }
         BackToCategoryFromMovie.setOnClickListener {
-            startActivity(Intent(this,Profile::class.java))
+            startActivity(Intent(this,TriviaActivity::class.java))
         }
     }
 }

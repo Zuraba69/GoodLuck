@@ -271,7 +271,7 @@ class GameActivityMusic : AppCompatActivity() {
             }
         }
         BackToCategoryFromMusic.setOnClickListener {
-            startActivity(Intent(this,Profile::class.java))
+            startActivity(Intent(this,TriviaActivity::class.java))
         }
     }
 }
