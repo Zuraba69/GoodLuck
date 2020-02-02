@@ -18,20 +18,17 @@ class Profile : AppCompatActivity() {
         actionBar?.hide()
         setContentView(R.layout.activity_profile)
 
-        MusicButton.setOnClickListener {
-            startActivity(Intent(this,GameActivityMusic::class.java))
-        }
-        SportButton.setOnClickListener {
-            startActivity(Intent(this,GameActivitySport::class.java))
-        }
-        MovieButton.setOnClickListener {
-            startActivity(Intent(this,GameActivityMovie::class.java))
-        }
         log_out_btn.setOnClickListener {
             startActivity(Intent(this,LoginActivity::class.java))
         }
         change_password_button.setOnClickListener {
             startActivity(Intent(this,ChangePassword::class.java))
+        }
+        TriviaButton.setOnClickListener {
+            startActivity(Intent(this,TriviaActivity::class.java))
+        }
+        TicTacToeButton.setOnClickListener {
+            startActivity(Intent(this,TicTacToeActivity::class.java))
         }
     }
 }
