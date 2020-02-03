@@ -30,5 +30,8 @@ class Profile : AppCompatActivity() {
         TicTacToeButton.setOnClickListener {
             startActivity(Intent(this,TicTacToeActivity::class.java))
         }
+        NeverEverButton.setOnClickListener {
+            startActivity(Intent(this,NeverEver::class.java))
+        }
     }
 }

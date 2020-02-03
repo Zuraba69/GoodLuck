@@ -69,36 +69,80 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="80dp"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="vertical">
         <LinearLayout
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_category_buttons">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_category_buttons">
 
-            <Button
-                android:id="@+id/TriviaButton"
+                <Button
+                    android:id="@+id/TriviaButton"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/trivia_real_logo" />
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:background="@drawable/trivia_real_logo" />
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_category_buttons">
+                <Button
+                    android:id="@+id/TicTacToeButton"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/tic_tac_toe_button_logo" />
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_category_buttons">
-            <Button
-                android:id="@+id/TicTacToeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:background="@drawable/tic_tac_toe_button_logo" />
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_category_buttons">
+
+                <Button
+                    android:id="@+id/NeverEverButton"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/never_ever_last" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_category_buttons">
+                <Button
+                    android:id="@+id/Something"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+            </LinearLayout>
         </LinearLayout>
+
+
+
+
+
     </LinearLayout>
 
 </FrameLayout>

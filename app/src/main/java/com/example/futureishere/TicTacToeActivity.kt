@@ -247,6 +247,7 @@ class TicTacToeActivity : AppCompatActivity() {
             DisableClicks()
         }else if (button00.text.isNotEmpty() && button01.text.isNotEmpty() && button02.text.isNotEmpty() && button10.text.isNotEmpty() && button11.text.isNotEmpty() && button12.text.isNotEmpty() && button20.text.isNotEmpty() && button21.text.isNotEmpty() && button22.text.isNotEmpty()) {
             Toast.makeText(this, "Draw", Toast.LENGTH_SHORT).show()
+            DisableClicks()
         }
     }
     private fun reset(){

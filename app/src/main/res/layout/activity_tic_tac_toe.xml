@@ -174,7 +174,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
-                android:background="@drawable/restart_button_icon"/>
+                android:background="@drawable/restart_logo"/>
         </LinearLayout>
 
     </LinearLayout>
