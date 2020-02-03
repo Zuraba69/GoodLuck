@@ -27,5 +27,8 @@ class TriviaActivity : AppCompatActivity() {
         MovieButton.setOnClickListener {
             startActivity(Intent(this,GameActivityMovie::class.java))
         }
+        BackToProfileFromTrivia.setOnClickListener {
+            startActivity(Intent(this,Profile::class.java))
+        }
     }
 }

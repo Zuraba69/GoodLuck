@@ -1,5 +1,6 @@
 package com.example.futureishere
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -25,6 +26,9 @@ class TicTacToeActivity : AppCompatActivity() {
         actionBar?.hide()
         setContentView(R.layout.activity_tic_tac_toe)
         init()
+        BackToProfileFromTicTacToe.setOnClickListener {
+            startActivity(Intent(this,Profile::class.java))
+        }
 
     }
     private fun init(){

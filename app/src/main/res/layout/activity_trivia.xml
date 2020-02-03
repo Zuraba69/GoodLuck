@@ -71,5 +71,16 @@
             android:textAllCaps="false"/>
     </LinearLayout>
     </LinearLayout>
+    <Button
+        android:id="@+id/BackToProfileFromTrivia"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="Back To Profile"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="15dp"
+        android:padding="4dp"
+        android:textSize="18dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="#F3EFEF"/>
 
 </FrameLayout>
