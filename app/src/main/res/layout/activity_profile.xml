@@ -82,10 +82,9 @@
                 android:id="@+id/TriviaButton"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:layout_marginStart="7dp"
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:background="@drawable/trivia_button_logo" />
+                android:background="@drawable/trivia_real_logo" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="150dp"
