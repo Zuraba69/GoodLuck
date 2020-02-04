@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:gravity="center"
             android:layout_height="wrap_content"
-            android:text="You will see the sentence and if you made it once you have to put your finger down"
+            android:text="You will see the sentence and if you made it once you have to take a shot"
             android:textColor="#F3EFEF"
             android:textSize="30dp"/>
 

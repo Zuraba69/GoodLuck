@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".ModernNamiokobana">
+    <TextView
+        android:id="@+id/namiokobana_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#F3EFEF"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_category_buttons"
+        android:textSize="25dp"
+        android:text="There are two teams.Each round one teammate explains word to a second teammate.there are 5 rounds and each round team has 30 seconds to play the game.if it's correct tap the correct button and your team will get +1 and also you can tap pass button if your teammate can't figure it out but you will get -1.Blue Team starts the game."
+        android:gravity="center"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/team_select_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_category_buttons"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="invisible"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="#5E7DDB"
+            android:text="Blue Team"/>
+        <EditText
+            android:id="@+id/blue_player_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:textSize="20dp"
+            android:textColorHint="#5E7DDB"
+            android:hint="Player Name"/>
+        <EditText
+            android:id="@+id/blue_player_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:textColorHint="#5E7DDB"
+            android:textSize="20dp"
+            android:hint="Player Name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#D35B5B"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:text="Red Team"/>
+        <EditText
+            android:id="@+id/red_player_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:textColorHint="#D35B5B"
+            android:textSize="20dp"
+            android:hint="Player Name"/>
+        <EditText
+            android:id="@+id/red_player_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:textColorHint="#D35B5B"
+            android:textSize="20dp"
+            android:hint="Player Name"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/team_select_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="team select"
+            android:padding="4dp"
+            android:layout_marginBottom="18dp"
+            android:textSize="18dp"
+            android:background="@drawable/rounded_button"
+            android:visibility="visible"
+            android:textColor="#F3EFEF"/>
+        <Button
+            android:id="@+id/BackToProfileFromNamiokobana"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="Back To Profile"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="15dp"
+            android:padding="4dp"
+            android:textSize="18dp"
+            android:background="@drawable/rounded_button"
+            android:visibility="visible"
+            android:textColor="#F3EFEF"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/blue_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="83dp"
+        android:text="START THE GAME"
+        android:padding="4dp"
+        android:textSize="18dp"
+        android:layout_gravity="center|bottom"
+        android:background="@drawable/rounded_button"
+        android:visibility="invisible"
+        android:textColor="#F3EFEF"/>
+
+    <Button
+        android:id="@+id/red_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="83dp"
+        android:text="START THE GAME"
+        android:padding="4dp"
+        android:textSize="18dp"
+        android:layout_gravity="center|bottom"
+        android:background="@drawable/rounded_button"
+        android:visibility="invisible"
+        android:textColor="#D35B5B"/>
+
+    <FrameLayout
+        android:id="@+id/blue_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+        <TextView
+            android:id="@+id/blue_word"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:text=""
+            android:textColor="#F3EFEF"
+            android:background="@drawable/blue_word_color"
+            android:gravity="center"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:fontFamily="serif"
+            android:id="@+id/blue_timer"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center|top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#F3EFEF"
+            android:textSize="60sp"/>
+        <TextView
+            android:id="@+id/blue_right_answer"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_gravity="bottom|end"
+            android:gravity="center"
+            android:background="@drawable/correct_answer"
+            android:layout_margin="30dp"/>
+        <TextView
+            android:id="@+id/blue_wrong_answer"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|start"
+            android:background="@drawable/wrong_answer"
+            android:layout_margin="30dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:gravity="center"
+            android:layout_marginBottom="90dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F3EFEF"
+                android:text="Blue Team Score"
+                android:textSize="25dp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/blue_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#F3EFEF"
+                android:textSize="60sp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/score_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="40dp"
+            app:srcCompat="@drawable/o_player_user" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="100dp"
+            app:srcCompat="@drawable/o_player_user" />
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="top|end"
+            android:gravity="center"
+            android:layout_marginEnd="63dp">
+            <TextView
+                android:id="@+id/red_score_in_board"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="50dp"
+                android:textColor="#D35B5B"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|start"
+            android:layout_margin="40dp"
+            app:srcCompat="@drawable/x_player_user" />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="100dp"
+            app:srcCompat="@drawable/x_player_user" />
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="top|start"
+            android:gravity="center"
+            android:layout_marginStart="63dp">
+            <TextView
+                android:id="@+id/blue_score_in_board"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="50dp"
+                android:textColor="#5E7DDB"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/next_round"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColor="#F3EFEF"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="NEXT ROUND"
+            android:background="@drawable/rounded_category_buttons"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/red_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+        <TextView
+            android:id="@+id/red_word"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:text=""
+            android:textColor="#F3EFEF"
+            android:background="@drawable/red_word_color"
+            android:gravity="center"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:fontFamily="serif"
+            android:id="@+id/red_timer"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center|top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#F3EFEF"
+            android:textSize="60sp"/>
+        <TextView
+            android:id="@+id/red_right_answer"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_gravity="bottom|end"
+            android:gravity="center"
+            android:background="@drawable/correct_answer"
+            android:layout_margin="30dp"/>
+        <TextView
+            android:id="@+id/red_wrong_answer"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|start"
+            android:background="@drawable/wrong_answer"
+            android:layout_margin="30dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:gravity="center"
+            android:layout_marginBottom="90dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F3EFEF"
+                android:text="Red Team Score"
+                android:textSize="25dp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/red_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#F3EFEF"
+                android:textSize="60sp"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

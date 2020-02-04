@@ -33,5 +33,8 @@ class Profile : AppCompatActivity() {
         NeverEverButton.setOnClickListener {
             startActivity(Intent(this,NeverEver::class.java))
         }
+        modern_namiokobana_button.setOnClickListener {
+            startActivity(Intent(this,ModernNamiokobana::class.java))
+        }
     }
 }
