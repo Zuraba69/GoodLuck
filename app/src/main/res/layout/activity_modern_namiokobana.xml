@@ -355,4 +355,259 @@
                 android:textSize="60sp"/>
         </LinearLayout>
     </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/score_bar_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/imageView52"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="40dp"
+            app:srcCompat="@drawable/o_player_user" />
+        <ImageView
+            android:id="@+id/imageView62"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="100dp"
+            app:srcCompat="@drawable/o_player_user" />
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="top|end"
+            android:gravity="center"
+            android:layout_marginEnd="63dp">
+            <TextView
+                android:id="@+id/red_score_in_board_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="50dp"
+                android:textColor="#D35B5B"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|start"
+            android:layout_margin="40dp"
+            app:srcCompat="@drawable/x_player_user" />
+        <ImageView
+            android:id="@+id/imageView72"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="100dp"
+            app:srcCompat="@drawable/x_player_user" />
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="top|start"
+            android:gravity="center"
+            android:layout_marginStart="63dp">
+            <TextView
+                android:id="@+id/blue_score_in_board_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="50dp"
+                android:textColor="#5E7DDB"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/next_round_2"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColor="#F3EFEF"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="NEXT ROUND"
+            android:background="@drawable/rounded_category_buttons"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/red_final_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="#D35B5B">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:text="Red Team just Won the game"
+            android:textColor="#F3EFEF"/>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/red_medal" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center|bottom">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_category_buttons"
+                android:layout_gravity="center|bottom">
+
+                <Button
+                    android:id="@+id/red_restart"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/restart_logo"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/BackToProfileFromRedWon"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:text="Back To Profile"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="15dp"
+                android:padding="4dp"
+                android:textSize="18dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="#F3EFEF"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/blue_final_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="#5E7DDB">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:text="Blue Team just Won the game"
+            android:textColor="#F3EFEF"/>
+
+        <ImageView
+            android:id="@+id/imageView83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/blue_medal" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center|bottom">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_category_buttons"
+                android:layout_gravity="center|bottom">
+
+                <Button
+                    android:id="@+id/blue_restart"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/restart_logo"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/BackToProfileFromBlueWon"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:text="Back To Profile"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="15dp"
+                android:padding="4dp"
+                android:textSize="18dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="#F3EFEF"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/draw_final_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@drawable/background_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:text="It's a Draw"
+            android:textColor="#F3EFEF"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center|bottom">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_category_buttons"
+                android:layout_gravity="center|bottom">
+
+                <Button
+                    android:id="@+id/draw_restart"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/restart_logo"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/BackToProfileFromDraw"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:text="Back To Profile"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="15dp"
+                android:padding="4dp"
+                android:textSize="18dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="#F3EFEF"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
 </FrameLayout>
