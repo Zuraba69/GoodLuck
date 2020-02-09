@@ -43,5 +43,8 @@ class LoginActivity : AppCompatActivity() {
                     }
             }
         }
+        LoginGuestButton.setOnClickListener {
+            startActivity(Intent(this,Profile::class.java))
+        }
     }
 }

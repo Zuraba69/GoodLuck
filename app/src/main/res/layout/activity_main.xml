@@ -84,6 +84,18 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/LoginGuestButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_button"
+            android:text="Log In as a guest"
+            android:textColor="#F3EFEF"
+            android:textSize="18dp" />
+
+        <Button
             android:id="@+id/LoginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

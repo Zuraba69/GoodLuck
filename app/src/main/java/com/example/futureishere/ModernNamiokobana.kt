@@ -12,7 +12,7 @@ import java.util.*
 import kotlin.concurrent.timer
 
 class ModernNamiokobana : AppCompatActivity() {
-    val words = arrayOf<String>("Chicken","Wall","Weed","Minecraft")
+    val words = arrayOf<String>("Chicken","Wall","Weed","Minecraft","God","Pocket","Laptop","Mouse","Guitar","Apple","Angel","Angry","Baby","Beard","Bible","Bikini","Book","Bucket","Bumble bee","Butterfly","Camera","Cat","Church","Crayon","Dolphin","Egg","Eiffel Tower","Fireworks","Flower","Flying saucer","Giraffe","Glasses","Lamp","Lion","Mailbox","Night","Nose","Peanut","Pizza","Pumpkin","Rainbow","Sand castle","Snowflake","Starfish","Strawberry","Sun","Tire","Toast","Toothbrush","Truck","Volleyball","Brain","Bus","Castle","Chain saw","Computer","Crib","Dragon","Flag","Kiss","Kitten","Lobster","Lollipop","Magnet","Music","Nurse","Owl","Piano","Robot","Snowball","Train","Birthday","Captain","Dance","Facebook","Game","Glue","Hockey","Hotel","Koala","Light","Mask","Photo","Pirate","Rock band","Skip","Space","Stork","Tourist","Zombie","WiFi","Classmates","War")
     var blue_score_kotlin:Int = 0
     var red_score_kotlin:Int = 0
     var round_counter:Int = 1
@@ -26,6 +26,10 @@ class ModernNamiokobana : AppCompatActivity() {
         // status bar is hidden, so hide that too if necessary.
         actionBar?.hide()
         setContentView(R.layout.activity_modern_namiokobana)
+
+        BackToProfileFromNamiokobana.setOnClickListener {
+            startActivity(Intent(this,Profile::class.java))
+        }
 
 
 
@@ -45,7 +49,7 @@ class ModernNamiokobana : AppCompatActivity() {
         }
         blue_right_answer.setOnClickListener{
             val r = Random()
-            val n = r.nextInt(4)
+            val n = r.nextInt(90)
             blue_word.setText(words[n])
             blue_score_kotlin ++
             blue_score.text = "" + blue_score_kotlin
@@ -54,7 +58,7 @@ class ModernNamiokobana : AppCompatActivity() {
         }
         blue_wrong_answer.setOnClickListener{
             val r = Random()
-            val n = r.nextInt(4)
+            val n = r.nextInt(90)
             blue_word.setText(words[n])
             blue_score_kotlin --
             blue_score.text = "" + blue_score_kotlin
@@ -69,7 +73,7 @@ class ModernNamiokobana : AppCompatActivity() {
         }
         red_right_answer.setOnClickListener{
             val r = Random()
-            val n = r.nextInt(4)
+            val n = r.nextInt(90)
             red_word.setText(words[n])
             red_score_kotlin ++
             red_score.text = "" + red_score_kotlin
@@ -78,7 +82,7 @@ class ModernNamiokobana : AppCompatActivity() {
         }
         red_wrong_answer.setOnClickListener{
             val r = Random()
-            val n = r.nextInt(4)
+            val n = r.nextInt(90)
             red_word.setText(words[n])
             red_score_kotlin --
             red_score.text = "" + red_score_kotlin
@@ -130,21 +134,21 @@ class ModernNamiokobana : AppCompatActivity() {
     fun init1(){
         if (blue_start_button.isPressed){
             val r = Random()
-            val n = r.nextInt(4)
+            val n = r.nextInt(90)
             blue_word.setText(words[n])
         }
     }
     fun init2(){
         if (next_round.isPressed){
             val r = Random()
-            val n = r.nextInt(4)
+            val n = r.nextInt(90)
             red_word.setText(words[n])
         }
     }
     fun init3(){
         if(next_round_2.isPressed){
             val r = Random()
-            val n = r.nextInt(4)
+            val n = r.nextInt(90)
             blue_word.setText(words[n])
         }
     }
@@ -160,7 +164,7 @@ class ModernNamiokobana : AppCompatActivity() {
         blue_score_in_board_2.text = "0"
     }
     private fun timer1() {
-        object : CountDownTimer(2000, 1000) {
+        object : CountDownTimer(30000, 1000) {
 
             override fun onFinish() {
 
@@ -182,7 +186,7 @@ class ModernNamiokobana : AppCompatActivity() {
         }.start()
     }
     private fun timer2() {
-        object : CountDownTimer(2000, 1000) {
+        object : CountDownTimer(30000, 1000) {
 
             override fun onFinish() {
 

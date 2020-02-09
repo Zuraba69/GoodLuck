@@ -131,11 +131,14 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
+                android:gravity="center"
                 android:background="@drawable/rounded_category_buttons">
                 <Button
                     android:id="@+id/modern_namiokobana_button"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"/>
+                    android:layout_width="120dp"
+                    android:gravity="center"
+                    android:background="@drawable/modern_namiokobana_logo"
+                    android:layout_height="120dp"/>
             </LinearLayout>
         </LinearLayout>
 
